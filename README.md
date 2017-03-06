@@ -1,8 +1,8 @@
 To use: 
 
 ```
-git clone https://github.com/liuamyj/{{repo-name}}
-cd {{repo-name}}
+git clone https://github.com/liuamyj/cs247-p4
+cd cs247-p4
 npm install
 node webServer.js
 ```
