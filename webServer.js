@@ -2,7 +2,6 @@
 var express = require('express'); 
 var portno = 3000;   // Port number to use
 var app = express(); 
-// var io = require('socket.io')(http);
 
 app.use(express.static(__dirname));
 

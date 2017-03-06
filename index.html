@@ -2,16 +2,24 @@
 
 <html ng-app="myApp" ng-controller="MainController">
     <head>
-        <title>CS247 App</title>
+        <title>Give Well</title>
         <script src="node_modules/angular/angular.js"></script>
         <script src="node_modules/angular-route/angular-route.js"></script>
         <script src="node_modules/angular-resource/angular-resource.js"></script>
+
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/tether/dist/js/tether.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
         <script src="mainController.js"></script>
         <link rel="stylesheet" type="text/css" href="main.css" />
 
         <script src="components/header/headerController.js"></script>
         <link rel="stylesheet" type="text/css" href="components/header/header.css" />
+
+        <script src="components/choose-causes/causesController.js"></script>
+        <link rel="stylesheet" type="text/css" href="components/choose-causes/choose-causes.css" />
     </head>
     <body>
     	<div ng-include="'components/header/header-template.html'" ng-controller="HeaderController"></div>
