@@ -4,6 +4,7 @@
     <head>
         <title>CS247 App</title>
         <script src="node_modules/angular/angular.js"></script>
+        <script src="node_modules/angular-route/angular-route.js"></script>
         <script src="node_modules/angular-resource/angular-resource.js"></script>
 
         <script src="mainController.js"></script>
@@ -14,6 +15,6 @@
     </head>
     <body>
     	<div ng-include="'components/header/header-template.html'" ng-controller="HeaderController"></div>
-        <!-- <div ng-view></div> -->
+        <div ng-view></div>
     </body>
 </html>
