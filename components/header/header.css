@@ -1,0 +1,29 @@
+.header {
+	background-color: grey;
+	display: flex;
+	justify-content: space-between;
+	height: 40px;
+}
+
+.header-item {
+	margin: auto;
+}
+
+.progress {
+	flex: 1;
+	text-align: center;
+}
+
+.user {
+	display: flex;
+}
+
+.user-item {
+	margin: auto;
+}
+
+.user-img {
+	width: 20px;
+	height: 20px;
+	background-color: blue;
+}
