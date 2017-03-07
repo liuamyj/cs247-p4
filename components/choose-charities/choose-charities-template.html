@@ -1,3 +1,11 @@
-<div>
-	<div>Charities page!</div>
+<div class="instructions">SELECT CHARITIES TO COMPARE</div>
+<div class="main-container">
+	<div class="sidebar">
+		<div ng-repeat="cause in causes">
+			<div class="cause-icon"></div>
+	    	<div class="cause-name">{{cause}}</div>
+		</div>
+	</div>
+	<div class="cause-charities">
+	</div>
 </div>

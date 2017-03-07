@@ -3,15 +3,19 @@ var app = angular.module('myApp',['ngResource', 'ngRoute']);
 
 app.config(function($routeProvider) {
     $routeProvider
-	    .when("/causes", {
+	    .when('/causes', {
 	        templateUrl : 'components/choose-causes/choose-causes-template.html',
 	        controller: 'CausesController'
 	    })
-	    .when("/charities", {
+	    .when('/charities', {
 	        templateUrl : 'components/choose-charities/choose-charities-template.html',
 	        controller: 'CharitiesController'
 	    })
-	    .when("/allocate", {
+	    .when('/compare', {
+	        templateUrl : 'components/compare-charities/compare-charities-template.html',
+	        controller: 'CompareController'
+	    })
+	    .when('/allocate', {
 	        templateUrl : 'components/allocate/allocate-template.html',
 	        controller: 'AllocateController'
 	    })
