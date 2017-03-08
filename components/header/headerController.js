@@ -1,5 +1,5 @@
 
-app.controller('HeaderController', ['$scope', '$resource', function($scope, $resource) {
+app.controller('HeaderController', ['$scope', function($scope) {
 
 
 }]);

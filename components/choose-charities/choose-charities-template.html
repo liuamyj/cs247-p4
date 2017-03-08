@@ -1,11 +1,19 @@
 <div class="instructions">SELECT CHARITIES TO COMPARE</div>
 <div class="main-container">
 	<div class="sidebar">
-		<div ng-repeat="cause in causes">
-			<div class="cause-icon"></div>
-	    	<div class="cause-name">{{cause}}</div>
+		<div ng-repeat="cause in sidebarCauses" class="sidebar-cause">
+			<a href="#!/charities/{{cause}}"><div class="sidebar-cause-icon" 
+			ng-class="{active: selectedCause == cause}"></div></a>
+	    	<div class="sidebar-cause-name">{{cause}}</div>
 		</div>
 	</div>
-	<div class="cause-charities">
+	<div class="charities-container">
+		<div ng-if="intro == true" class="message-container">
+			<div class="message">Based on the causes you selected, we've chosen some charities that you might be interested in. Click on a cause in the left sidebar to get started!</div>
+		</div>
+		<div ng-if="intro == false">
+			<div>{{selectedCause}}</div>
+		</div>
+		<div class="comparison-tool"></div>
 	</div>
 </div>

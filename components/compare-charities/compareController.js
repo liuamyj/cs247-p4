@@ -1,4 +1,4 @@
 
-app.controller('CompareController', ['$scope', '$resource', function($scope, $resource) {
+app.controller('CompareController', ['$scope', function($scope) {
 	
 }]);

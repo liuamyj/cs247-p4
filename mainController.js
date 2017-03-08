@@ -11,6 +11,10 @@ app.config(function($routeProvider) {
 	        templateUrl : 'components/choose-charities/choose-charities-template.html',
 	        controller: 'CharitiesController'
 	    })
+	    .when('/charities/:cause', {
+	        templateUrl : 'components/choose-charities/choose-charities-template.html',
+	        controller: 'CharitiesController'
+	    })
 	    .when('/compare', {
 	        templateUrl : 'components/compare-charities/compare-charities-template.html',
 	        controller: 'CompareController'

@@ -3,12 +3,12 @@
 }
 
 .causes-container {
-	padding: 30px;
+	padding-bottom: 40px;
 }
 
 .cause {
 	text-align: center;
-	padding-bottom: 20px;
+	padding-top: 20px;
 }
 
 .cause-icon {
@@ -18,14 +18,8 @@
 	display:inline-block;
 }
 
-.button {
-	width: 120px;
-	text-align: center;
-	background-color: grey;
-}
-
-.button:hover {
-	background-color: lightgrey;
+.cause-name {
+	text-transform: uppercase;
 }
 
 a {

@@ -1,4 +1,10 @@
 
-app.controller('CharitiesController', ['$scope', '$resource', function($scope, $resource) {
-	$scope.causes = ['EDUCATION', 'HOMELESSNESS', 'WOMEN\'S RIGHTS']
+app.controller('CharitiesController', ['$scope', '$routeParams', function($scope, $routeParams) {
+	$scope.sidebarCauses = ['education', 'health', 'women\'s rights']
+	$scope.intro = true;
+
+	if ($routeParams.cause !== undefined) {
+		$scope.selectedCause = $routeParams.cause;
+		$scope.intro = false;
+	}
 }]);
