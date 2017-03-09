@@ -1,0 +1,92 @@
+.instructions {
+	text-align: center;
+}
+
+.compare-container {
+	padding-bottom: 40px;
+}
+
+/*.col {
+	padding-right: 70vh;
+}
+*/
+.compare {
+	text-align: center;
+	padding-top: 20px;
+}
+
+.charity-icon {
+	height: 120px;
+	width: 250px;
+	background-color: grey;
+	display:inline-block;
+	padding-left: 130px
+}
+
+.text1 {
+	font-size: 10px;
+	font-style: italic;
+}
+
+.text2 {
+	font-size: 10px;
+	font-style: italic;
+}
+
+.text3 {
+	font-size: 10px;
+	font-style: italic;
+}
+
+.text4 {
+	font-size: 10px;
+	font-style: italic;
+}
+
+.left {
+	width: 178px;
+    height: 100%;
+   	padding-top: 30vh;
+   	float: left;
+}
+
+.text5 {
+	font-size: 10px;
+	font-style: italic;
+}
+
+.text6 {
+	font-size: 10px;
+	font-style: italic;
+}
+
+.text7 {
+	font-size: 10px;
+	font-style: italic;
+}
+
+.charity-name {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.background-columns {
+	margin: auto;
+	width: 250px;
+	height: 50vh;
+	text-align: left;
+	background-color: lightgrey;
+	padding-top: 20px;
+}
+
+a {
+	color: black;
+	position: absolute;
+	right:    150px;
+	bottom:   10px;
+}
+
+a:hover {
+	color: black;
+	text-decoration: none;
+}
