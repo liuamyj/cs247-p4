@@ -1,4 +1,4 @@
-.main-container {
+.page-container {
 	display: flex;
 	flex-direction: horizontal;
 }
@@ -36,13 +36,12 @@
 	text-transform: uppercase;
 }
 
-.charities-container {
-	/*margin: auto;*/
+.main-container {
 	width: calc(100% - 150px); /*150px is width of sidebar*/
 }
 
 .message-container {
-	height: calc(100% - 170px); /*170px is height of compare tool+header+info message*/
+	height: calc(100% - 215px); /*215px is height of compare tool+header+info message*/
 	overflow-y: auto;
 	display: flex;
 }
@@ -54,10 +53,78 @@
 	text-align: center;
 }
 
+.charity-page-title {
+	text-transform: uppercase;
+}
+
+.charities-container {
+	height: calc(100% - 215px); /*215px is height of compare tool+header+info message*/
+	overflow-y: auto;
+	padding-left: 20px;
+	padding-top: 20px;
+}
+
+.charity-filters {
+	display: flex;
+	justify-content: space-between;
+	width: 775px;
+	font-size: 14px;
+}
+
+.charity {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.charity-name {
+	text-transform: uppercase;
+}
+
+.charity-description {
+	font-size: 12px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.charity-img {
+	height: 120px;
+	width: 120px;
+	background-color: grey;
+}
+
+.charity-info {
+	width: 650px;
+}
+
+.charity-details {
+	display: flex;
+	justify-content: space-between;
+	width: 650px;
+	font-size: 12px;
+}
+
 .comparison-tool {
 	position: absolute;
     bottom: 0;
     height: 120px;
     width: calc(100% - 150px); /*150px is width of sidebar*/
     background-color: grey;
+}
+
+.compare-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 800px;
+}
+
+.compare-spaces {
+	display: flex;
+}
+
+.compare-slot {
+	height: 100px;
+	width: 100px;
+	background-color: lightgrey;
+	margin: 10px 0px 10px 10px;
 }

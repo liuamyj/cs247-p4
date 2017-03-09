@@ -13,11 +13,11 @@ body {
 }
 
 .button {
-	width: 120px;
+	width: 180px;
 	text-align: center;
-	background-color: grey;
+	background-color: lightgrey;
 }
 
 .button:hover {
-	background-color: lightgrey;
+	background-color: darkgrey;
 }

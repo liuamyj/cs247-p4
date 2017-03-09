@@ -1,5 +1,5 @@
 <div class="instructions">SELECT CHARITIES TO COMPARE</div>
-<div class="main-container">
+<div class="page-container">
 	<div class="sidebar">
 		<div ng-repeat="cause in sidebarCauses" class="sidebar-cause">
 			<a href="#!/charities/{{cause}}"><div class="sidebar-cause-icon" 
@@ -7,13 +7,54 @@
 	    	<div class="sidebar-cause-name">{{cause}}</div>
 		</div>
 	</div>
-	<div class="charities-container">
+	<div class="main-container">
 		<div ng-if="intro == true" class="message-container">
 			<div class="message">Based on the causes you selected, we've chosen some charities that you might be interested in. Click on a cause in the left sidebar to get started!</div>
 		</div>
-		<div ng-if="intro == false">
-			<div>{{selectedCause}}</div>
+		<div ng-if="intro == false" class="charities-container">
+			<div class="charity-page-title">Charities working in {{selectedCause}}</div>
+			<div class="charity-filters">
+				<div class="filter-description">Filter by:</div>
+				<div class="filter">
+					<input type="checkbox" id="cbox1" checked="checked">
+  					<label for="cbox1">Working in your local area</label>
+				</div>
+				<div class="filter">
+					<input type="checkbox" id="cbox2" checked="checked">
+  					<label for="cbox2">Trending on social media</label>
+				</div>
+				<div class="filter">
+					<input type="checkbox" id="cbox3" checked="checked">
+  					<label for="cbox3">Trending in the news</label>
+				</div>
+				<div class="filter">
+					<input type="checkbox" id="cbox4" checked="checked">
+  					<label for="cbox4">Needs urgent help</label>
+				</div>
+			</div>
+			<div ng-repeat="charity in charityList" class="charity">
+				<div class="charity-img"></div>
+				<div class="charity-info">
+					<div class="charity-name">{{charity.name}}</div>
+					<div class="charity-description">{{charity.description}}</div>
+					<div class="charity-details">
+						<div class="charity-funding">Total funding in 2016: {{charity.funding}}</div>
+						<div class="charity-audience">Audience size: {{charity.audience}}</div>
+						<div class="charity-years">Years of operation: {{charity.years}}</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="comparison-tool"></div>
+		<div class="comparison-tool">
+			<div class="compare-container">
+				<div class="compare-spaces">
+					<div class="compare-slot"></div>
+					<div class="compare-slot"></div>
+					<div class="compare-slot"></div>
+					<div class="compare-slot"></div>
+				</div>
+				<a ng-href="#!/compare"><div class="button">COMPARE</div></a>
+			</div>
+		</div>
 	</div>
 </div>
