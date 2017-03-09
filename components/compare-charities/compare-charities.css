@@ -6,10 +6,6 @@
 	padding-bottom: 40px;
 }
 
-/*.col {
-	padding-right: 70vh;
-}
-*/
 .compare {
 	text-align: center;
 	padding-top: 20px;
@@ -79,14 +75,14 @@
 	padding-top: 20px;
 }
 
-a {
+.allocate-button {
 	color: black;
 	position: absolute;
 	right:    150px;
 	bottom:   10px;
 }
 
-a:hover {
+.allocate-button:hover {
 	color: black;
 	text-decoration: none;
 }
