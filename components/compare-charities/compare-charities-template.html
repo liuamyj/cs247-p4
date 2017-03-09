@@ -4,20 +4,19 @@
 </div>
 <div class="compare-container">
 	<!-- <div class = "left"> stated mission </div> -->
-	<div ng-repeat="compare in compares" class="col"> 
-	    <div class="col-md-2 offset-md-1 compare">
-	    	<div class="charity-icon"></div>
-	    	<div class="charity-name">{{compares[$index]}}</div>
-	    	<div class = "background-columns">
-	    		<ul style="list-style-type:circle" class ="text1"><li>{{stated_mission[$index]}}</li></ul>
-	    		<ul style="list-style-type:circle" class ="text2"><li>{{years_of_operation[$index]}}</li></ul>
-	    		<ul style="list-style-type:circle" class ="text3"><li>{{audience_size[$index]}}</li></ul>
-	    		<ul style="list-style-type:circle" class ="text4"><li>{{total_funding[$index]}}</li></ul>
-	    		<ul style="list-style-type:circle" class ="text5"><li>{{total_funding[$index]}}</li></ul>
-	    		<ul style="list-style-type:circle" class ="text6"><li>{{total_expenses[$index]}}</li></ul>
-	    		<ul style="list-style-type:circle" class ="text7"><li>{{charity_watch_rating[$index]}}</li></ul>
-	    	</div>
-	    </div>
+	<div ng-repeat="compare in compares" class="compare"> 
+    	<div class="compare-charity-icon"></div>
+    	<div class="compare-charity-name">{{compare.name}}</div>
+    	<div class="background-columns">
+    		<ul class="compare-details">
+    			<li class="compare-item">{{compare.mission}}</li>
+    			<li class="compare-item">{{compare.years}}</li>
+    			<li class="compare-item">{{compare.audience}}</li>
+    			<li class="compare-item">{{compare.funding}}</li>
+    			<li class="compare-item">{{compare.expenses}}</li>
+    			<li class="compare-item">{{compare.rating}}</li>
+    		</ul>
+    	</div>
 	</div>
 </div>
 <div class="row">

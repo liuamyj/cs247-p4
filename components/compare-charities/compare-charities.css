@@ -3,67 +3,41 @@
 }
 
 .compare-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
 	padding-bottom: 40px;
 }
 
 .compare {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	text-align: center;
 	padding-top: 20px;
+	margin: 20px;
 }
 
-.charity-icon {
+.compare-charity-name {
+	text-transform: uppercase;
+	width: 180px;
+}
+
+.compare-charity-icon {
 	height: 120px;
-	width: 250px;
+	width: 120px;
 	background-color: grey;
-	display:inline-block;
 	padding-left: 130px
 }
 
-.text1 {
-	font-size: 10px;
+.compare-details {
+	list-style-type: circle;
+}
+
+.compare-item {
+	font-size: 12px;
 	font-style: italic;
-}
-
-.text2 {
-	font-size: 10px;
-	font-style: italic;
-}
-
-.text3 {
-	font-size: 10px;
-	font-style: italic;
-}
-
-.text4 {
-	font-size: 10px;
-	font-style: italic;
-}
-
-.left {
-	width: 178px;
-    height: 100%;
-   	padding-top: 30vh;
-   	float: left;
-}
-
-.text5 {
-	font-size: 10px;
-	font-style: italic;
-}
-
-.text6 {
-	font-size: 10px;
-	font-style: italic;
-}
-
-.text7 {
-	font-size: 10px;
-	font-style: italic;
-}
-
-.charity-name {
-	text-transform: uppercase;
-	text-align: center;
+	margin: 10px; 
 }
 
 .background-columns {
