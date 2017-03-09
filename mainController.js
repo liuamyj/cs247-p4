@@ -29,5 +29,9 @@ app.config(function($routeProvider) {
 	});
 
 app.controller('MainController', ['$scope', '$resource', '$route', function($scope, $resource, $route) {
-	
+
+	$scope.main = {};
+	$scope.main.numSelected = 0; 
+	$scope.main.selectedCauses = [];
+
 }]);

@@ -1,7 +1,7 @@
 <div class="instructions">SELECT CHARITIES TO COMPARE</div>
 <div class="page-container">
 	<div class="sidebar">
-		<div ng-repeat="cause in sidebarCauses" class="sidebar-cause">
+		<div ng-repeat="cause in main.selectedCauses" class="sidebar-cause">
 			<a href="#!/charities/{{cause}}"><div class="sidebar-cause-icon" 
 			ng-class="{active: selectedCause == cause}"></div></a>
 	    	<div class="sidebar-cause-name">{{cause}}</div>

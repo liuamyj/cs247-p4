@@ -2,13 +2,27 @@
 	text-align: center;
 }
 
+.main-container-causes {
+	display: flex;
+	justify-content: center;
+}
+
 .causes-container {
-	padding-bottom: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+	width: 1000px;
+}
+
+.selected-cause {
+	border: 5px solid black;
 }
 
 .cause {
+	margin: auto;
 	text-align: center;
-	padding-top: 20px;
+	width: 200px;
+	padding: 20px;
 }
 
 .cause-icon {

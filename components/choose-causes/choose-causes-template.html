@@ -1,30 +1,14 @@
 <div class="instructions">SELECT CAUSES THAT INTEREST YOU</div>
 <div class="num-causes">
 	<div class="num-causes-text">NUMBER OF CAUSES SELECTED</div>
-	<div class="num-causes-counter">0/5</div>
+	<div class="num-causes-counter">{{main.numSelected}}/5</div>
 </div>
-<div class="causes-container">
-	<div ng-repeat="cause in causes" ng-if="$index % 5 == 0" class="row"> 
-	    <div class="col-md-2 offset-md-1 cause">
-	    	<div class="cause-icon"></div>
-	    	<div class="cause-name">{{causes[$index]}}</div>
-	    </div>
-	    <div class="col-md-2 cause">
-	    	<div class="cause-icon"></div>
-	    	<div class="cause-name">{{causes[$index + 1]}}</div>
-	    </div>
-	    <div class="col-md-2 cause">
-	    	<div class="cause-icon"></div>
-	    	<div class="cause-name">{{causes[$index + 2]}}</div>
-	    </div>
-	    <div class="col-md-2 cause">
-	    	<div class="cause-icon"></div>
-	    	<div class="cause-name">{{causes[$index + 3]}}</div>
-	    </div>
-	    <div class="col-md-2 cause">
-	    	<div class="cause-icon"></div>
-	    	<div class="cause-name">{{causes[$index + 4]}}</div>
-	    </div>
+<div class="main-container-causes">
+	<div class="causes-container">
+		<div ng-repeat="cause in causes" ng-click="selectCause(cause)" class="cause"> 
+		    <div ng-class="{'selected-cause': main.selectedCauses.indexOf(cause) >= 0}" class="cause-icon"></div>
+		    <div class="cause-name">{{cause}}</div>
+		</div>
 	</div>
 </div>
 <div class="row">
