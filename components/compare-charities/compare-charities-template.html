@@ -8,30 +8,32 @@
 <div class="num-compare-charities">
 	<div class="num-causes-text"></div>
 </div>
-<div class="compare-container">
-	<div class = "left">
-        <div class="compare-categories">stated mission</div>  
-        <div class="compare-categories">stated mission</div>
-        <div class="compare-categories">stated mission</div>
-        <div class="compare-categories">stated mission</div>
-        <div class="compare-categories">stated mission</div>
-        <div class="compare-categories">stated mission</div>  
-    </div>
-	<div ng-repeat="compare in compares" class="compare"> 
-    	<div class="compare-charity-icon"></div>
-    	<div class="compare-charity-name">{{compare.name}}</div>
-    	<div class="background-columns">
-    		<ul class="compare-details">
-    			<li class="compare-item">{{compare.mission}}</li>
-    			<li class="compare-item">{{compare.years}}</li>
-    			<li class="compare-item">{{compare.audience}}</li>
-    			<li class="compare-item">{{compare.funding}}</li>
-    			<li class="compare-item">{{compare.expenses}}</li>
-    			<li class="compare-item">{{compare.rating}}</li>
-    		</ul>
+<div class="main-compare-container">
+    <div class="compare-container">
+    	<div class = "left">
+            <div class="compare-categories">stated mission</div>  
+            <div class="compare-categories">stated mission</div>
+            <div class="compare-categories">stated mission</div>
+            <div class="compare-categories">stated mission</div>
+            <div class="compare-categories">stated mission</div>
+            <div class="compare-categories">stated mission</div>  
+        </div>
+    	<div ng-repeat="compare in compares" class="compare"> 
+        	<div class="compare-charity-icon"></div>
+        	<div class="compare-charity-name">{{compare.name}}</div>
+        	<div class="background-columns">
+        		<ul class="compare-details">
+        			<li class="compare-item">{{compare.mission}}</li>
+        			<li class="compare-item">{{compare.years}}</li>
+        			<li class="compare-item">{{compare.audience}}</li>
+        			<li class="compare-item">{{compare.funding}}</li>
+        			<li class="compare-item">{{compare.expenses}}</li>
+        			<li class="compare-item">{{compare.rating}}</li>
+        		</ul>
+        	</div>
     	</div>
-	</div>
-</div>
-<div class="row">
-	<a ng-href="#!/allocate"><div class="button allocate-button">CHOOSE THIS CHARITY</div></a>
+    </div>
+    <div class="button-row">
+    	<a ng-href="#!/allocate"><div class="button button-row-position">CHOOSE THIS CHARITY</div></a>
+    </div>
 </div>

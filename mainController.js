@@ -43,4 +43,16 @@ app.controller('MainController', ['$scope', '$resource', '$route', function($sco
 	$scope.main.numSelected = 0; 
 	$scope.main.selectedCauses = [];
 
+	$scope.main.causes = ['animal welfare', 'arts and culture', 'civil liberties', 'community', 'disaster relief',
+					'drug abuse', 'education', 'environment', 'health', 'homelessness', 
+					'hunger', 'religion', 'science', 'special needs', 'women\'s rights']; 
+
+	$scope.main.causeIcons = {'animal welfare' : 'img/animal.svg', 'arts and culture' : 'img/arts.svg', 
+							  'civil liberties' : 'img/civil.svg', 'community' : 'img/community.svg', 
+							  'disaster relief' : 'img/disaster.svg', 'drug abuse' : 'img/drug.svg', 
+							  'education' : 'img/education.svg', 'environment' : 'img/environment.svg', 
+							  'health' : 'img/health.svg', 'homelessness' : 'img/homelessness.svg', 
+							  'hunger' : 'img/hunger.svg', 'religion' : 'img/religion.svg', 
+							  'science' : 'img/science.svg', 'special needs' : 'img/needs.svg', 
+							  'women\'s rights' : 'img/women.svg'};
 }]);

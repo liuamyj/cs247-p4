@@ -15,7 +15,8 @@ html, body {
 	color: #5B79A8;
 	background-color: #C2CEE2;
 	font-family: 'Montserrat', sans-serif;
-	height: 60px;
+	font-size: 14px;
+	height: 50px;
 }
 
 .back-button {
@@ -28,11 +29,20 @@ html, body {
 }
 
 .button {
-	width: 180px;
+	width: 225px;
+	height: 50px;
+	line-height: 50px;
 	text-align: center;
-	background-color: lightgrey;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	background-color: #5B79A8;
+	border-radius: 5px;
 }
 
 .button:hover {
-	background-color: darkgrey;
+	background-color: #4A90E2;
+}
+
+.button-row-position {
+	margin-left: 700px;
 }

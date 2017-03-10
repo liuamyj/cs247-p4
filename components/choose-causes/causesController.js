@@ -2,10 +2,6 @@
 app.controller('CausesController', ['$scope', '$resource', function($scope, $resource) {
 
 	const MAX_CAUSES = 5;
-	$scope.causes = ['animal welfare', 'arts and culture', 'civil liberties', 'community', 'disaster relief',
-					'drug abuse', 'education', 'environment', 'health', 'homelessness', 
-					'hunger', 'religion', 'science', 'special needs', 'women\'s rights']; 
-
 	$scope.main.currState = 1; 
 
 	$scope.selectCause = function(cause) {
