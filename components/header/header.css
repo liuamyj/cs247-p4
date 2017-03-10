@@ -1,8 +1,12 @@
 .header {
-	background-color: lightgrey;
 	display: flex;
 	justify-content: space-between;
-	height: 40px;
+	height: 60px;
+	font-family: 'Montserrat', sans-serif;
+	color: #5B79A8;
+	background-color: #DCE0E6;
+	padding-right: 30px;
+	padding-left: 30px;
 }
 
 .header-item {
@@ -10,9 +14,33 @@
 }
 
 .progress {
-	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.progress-state {
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 15px;
+	color: #DCE0E6;
+	background-color: white;
 	text-align: center;
-	padding-bottom: 25px;
+}
+
+.progress-state-waiting {
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	background-color: white;
+}
+
+.curr-state {
+	color: white;
+	background-color: #5B79A8;
 }
 
 .title {
@@ -23,22 +51,30 @@
 	margin: auto;
 }
 
+.title-name {
+	letter-spacing: 3px;
+}
+
 .title-logo {
-	width: 20px;
-	height: 20px;
-	background-color: blue;
+	margin: 5px;
 }
 
 .user {
 	display: flex;
+	width: 250px;
 }
 
 .user-item {
 	margin: auto;
 }
 
+.user-id {
+	font-size: 12px;
+	letter-spacing: 2px;
+}
+
 .user-img {
-	width: 20px;
-	height: 20px;
-	background-color: blue;
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
 }

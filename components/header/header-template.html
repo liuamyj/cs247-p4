@@ -1,11 +1,17 @@
 <div class="header">
 	<div class="header-item title">
-		<div class="title-item title-logo"></div>
+		<img src="img/logo.svg" alt="logo" class="title-item title-logo">
 		<div class="title-item title-name">GIVEWELL</div>
 	</div>
-	<div class="header-item progress">progress</div>
+	<div class="header-item progress">
+		<div class="progress-state" ng-class="{'curr-state': main.currState == 1}">1</div>
+		<div class="progress-state" ng-class="{'curr-state': main.currState == 2}">2</div>
+		<div class="progress-state" ng-class="{'curr-state': main.currState == 3}">3</div>
+		<div class="progress-state-waiting" ng-class="{'curr-state': main.currState == 3.5}"></div>
+		<div class="progress-state" ng-class="{'curr-state': main.currState == 4}">4</div>
+	</div>
 	<div class="header-item user">
-		<div class="user-item user-img"></div>
-		<div class="user-item user-id">Katherine Liu</div>
+		<img src="img/icon_katherine.png" alt="katherine user icon" class="user-item user-img">
+		<div class="user-item user-id">KATHERINE LIU</div>
 	</div>
 </div>

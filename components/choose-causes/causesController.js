@@ -6,6 +6,8 @@ app.controller('CausesController', ['$scope', '$resource', function($scope, $res
 					'drug abuse', 'education', 'environment', 'health', 'homelessness', 
 					'hunger', 'religion', 'science', 'special needs', 'women\'s rights']; 
 
+	$scope.main.currState = 1; 
+
 	$scope.selectCause = function(cause) {
 		// if cause is selected, deselect it 
 		index = $scope.main.selectedCauses.indexOf(cause);

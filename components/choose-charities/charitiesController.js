@@ -1,7 +1,8 @@
 
 app.controller('CharitiesController', ['$scope', '$routeParams', function($scope, $routeParams) {
-	$scope.sidebarCauses = ['education', 'health', 'women\'s rights']
+
 	$scope.intro = true;
+    $scope.main.currState = 2; 
 
 	if ($routeParams.cause !== undefined) {
 		$scope.intro = false;

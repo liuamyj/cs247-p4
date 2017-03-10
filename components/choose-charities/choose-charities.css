@@ -46,7 +46,7 @@
 }
 
 .message-container {
-	height: calc(100% - 215px); /*215px is height of compare tool+header+info message*/
+	height: calc(100vh - 215px); /*215px is height of compare tool+header+info message*/
 	overflow-y: auto;
 	display: flex;
 }
@@ -63,7 +63,7 @@
 }
 
 .charities-container {
-	height: calc(100% - 215px); /*215px is height of compare tool+header+info message*/
+	height: calc(100vh - 215px); /*215px is height of compare tool+header+info message*/
 	overflow-y: auto;
 	padding-left: 20px;
 	padding-top: 20px;

@@ -1,5 +1,7 @@
 
 app.controller('CompareController', ['$scope', '$resource', function($scope, $resource) {
+    $scope.main.currState = 3; 
+
 	$scope.compares = [
 		{ name: 'Washington Junior School of the Arts', 
     	  mission: 'To provide pre-professional arts training and a full coverage preparatory curriculum to over 500 youth', 
