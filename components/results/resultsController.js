@@ -1,4 +1,6 @@
 
-app.controller('ResultsController', ['$scope', '$resource', function($scope, $resource) {
+app.controller('ResultsController', ['$scope', function($scope) {
+
+	$scope.main.currState = 3.5;
 
 }]);

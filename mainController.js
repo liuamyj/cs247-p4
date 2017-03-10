@@ -19,9 +19,17 @@ app.config(function($routeProvider) {
 	        templateUrl : 'components/compare-charities/compare-charities-template.html',
 	        controller: 'CompareController'
 	    })
+	    .when('/waiting', {
+	        templateUrl : 'components/waiting/waiting-template.html',
+	        controller: 'WaitingController'
+	    })
 	    .when('/allocate', {
 	        templateUrl : 'components/allocate/allocate-template.html',
 	        controller: 'AllocateController'
+	    })
+	    .when('/results', {
+	        templateUrl : 'components/results/results-template.html',
+	        controller: 'ResultsController'
 	    })
 	    .otherwise({
             redirectTo: '/causes'
