@@ -2,6 +2,14 @@
 	text-align: center;
 }
 
+.left {
+	padding-top: 240px;
+}
+
+.compare-categories {
+	padding-bottom: 30px;
+}
+
 .compare-container {
 	width: 100%;
 	display: flex;
