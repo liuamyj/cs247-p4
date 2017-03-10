@@ -12,40 +12,58 @@
 	width: 150px;
 	height: 100vh;
 	text-align: center;
-	background-color: lightgrey;
+	background-color: #EFF2F6;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .sidebar-cause {
 	text-align: center;
-	margin-top: 25px;
 }
 
-.sidebar-cause-icon {
+.sidebar-cause-tile {
 	height: 80px;
 	width: 80px;
-	background-color: grey;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	background-color: white;
+	border-radius: 3px;
 	display:inline-block;
+	color: #5B79A8;
 }
 
 .active {
-	border: 5px solid black;
+	box-shadow: 0 0 0 3px #4A90E2;
+	color: #4A90E2;
 }
 
-.sidebar-cause-icon:hover {
-	outline: 5px solid white;
+.sidebar-cause-tile:hover {
+	box-shadow: 0 0 0 3px #4A90E2;
 }
 
-.sidebar-cause-name {
-	font-size: 14px;
+.active-sidebar-name {
+	font-size: 12px;
 	text-transform: uppercase;
+	color: #4A90E2;
+}
+
+.sidebar-name {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #5B79A8;
+}
+
+.sidebar-icon {
+	font-size: 40px;
+	margin-top: 20px;
 }
 
 .main-container {
 	width: calc(100% - 150px); /*150px is width of sidebar*/
+	color: #4A4A4A;
 }
 
 .message-container {
-	height: calc(100vh - 215px); /*215px is height of compare tool+header+info message*/
+	height: calc(100vh - 226px); /*226px is height of compare tool+header+info message*/
 	overflow-y: auto;
 	display: flex;
 }
@@ -58,13 +76,16 @@
 }
 
 .charity-page-title {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
 	text-transform: uppercase;
 }
 
 .charities-container {
-	height: calc(100vh - 215px); /*215px is height of compare tool+header+info message*/
+	height: calc(100vh - 226px); /*226px is height of compare tool+header+info message*/
 	overflow-y: auto;
-	padding-left: 20px;
+	padding-left: 50px;
 	padding-top: 20px;
 }
 
@@ -73,6 +94,9 @@
 	justify-content: space-between;
 	width: 775px;
 	font-size: 14px;
+	padding: 10px;
+	border-bottom: 1px solid #979797;
+	margin-bottom: 15px;
 }
 
 .charity {
@@ -81,6 +105,7 @@
 }
 
 .charity-name {
+	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
 }
 
@@ -93,17 +118,19 @@
 .charity-img {
 	height: 120px;
 	width: 120px;
-	background-color: grey;
+	background-color: #DCE0E6;
+	border-radius: 5px;
 }
 
 .charity-info {
 	width: 650px;
+	padding-left: 20px;
 }
 
 .charity-details {
 	display: flex;
 	justify-content: space-between;
-	width: 650px;
+	width: 630px;
 	font-size: 12px;
 }
 
@@ -112,23 +139,30 @@
     bottom: 0;
     height: 120px;
     width: calc(100% - 150px); /*150px is width of sidebar*/
-    background-color: grey;
+    background-color: white;
+    border-top: 1px solid #979797;
 }
 
 .compare-tool-container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 800px;
+	width: 780px;
+	height: 100%;
 }
 
 .compare-spaces {
+	height: 100%;
 	display: flex;
+	align-items: center;
+	margin-left: 70px;
 }
 
 .compare-slot {
-	height: 100px;
-	width: 100px;
+	background-color: blue;
+	height: 90px;
+	width: 90px;
 	background-color: lightgrey;
-	margin: 10px 0px 10px 10px;
+	border-radius: 3px;
+	margin: 15px;
 }

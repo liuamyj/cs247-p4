@@ -15,14 +15,17 @@
 		<div class="causes-group">
 			<div ng-repeat="cause in main.causes" ng-click="selectCause(cause)" class="cause"> 
 			    <div ng-class="{'selected-cause': main.selectedCauses.indexOf(cause) >= 0}" class="cause-tile">
-			    	<img src="{{main.causeIcons[cause]}}" class="cause-icon">
+			    	<div ng-class="main.selectedCauses.indexOf(cause) >= 0 ? 'selected-cause-icon' : 'cause-icon'" 
+			    	 class="{{main.causeIcons[cause]}}" ></div>
 			    </div>
-			    <div class="cause-name">{{cause}}</div>
+			    <div ng-class="main.selectedCauses.indexOf(cause) >= 0 ? 'selected-cause-name' : 'cause-name'">{{cause}}</div>
 			</div>
 		</div>
 	</div>
 	<div class="button-row">
-		<a ng-href="#!/charities"><div class="button button-row-position">FIND CHARITIES</div></a>
+		<a ng-href="#!/charities" class="button-link">
+			<div class="button button-row-position">FIND CHARITIES</div>
+		</a>
 	</div>
 </div>
 

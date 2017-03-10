@@ -9,9 +9,11 @@
 	<div class="page-container">
 		<div class="sidebar">
 			<div ng-repeat="cause in main.selectedCauses" class="sidebar-cause">
-				<a href="#!/charities/{{cause}}"><div class="sidebar-cause-icon" 
-				ng-class="{active: selectedCause == cause}"></div></a>
-		    	<div class="sidebar-cause-name">{{cause}}</div>
+		    	<a href="#!/charities/{{cause}}"><div class="sidebar-cause-tile"
+		    		ng-class="{active: selectedCause == cause}">
+			    	<div class="{{main.causeIcons[cause]}} sidebar-icon"></div>
+			    </div></a>
+			    <div ng-class="selectedCause == cause ? 'active-sidebar-name' : 'sidebar-name'">{{cause}}</div>
 			</div>
 		</div>
 		<div class="main-container">
@@ -60,7 +62,9 @@
 						<div class="compare-slot"></div>
 						<div class="compare-slot"></div>
 					</div>
-					<a ng-href="#!/compare"><div class="button">COMPARE</div></a>
+					<a ng-href="#!/compare" class="button-link">
+						<div class="button">COMPARE</div>
+					</a>
 				</div>
 			</div>
 		</div>

@@ -47,12 +47,12 @@ app.controller('MainController', ['$scope', '$resource', '$route', function($sco
 					'drug abuse', 'education', 'environment', 'health', 'homelessness', 
 					'hunger', 'religion', 'science', 'special needs', 'women\'s rights']; 
 
-	$scope.main.causeIcons = {'animal welfare' : 'img/animal.svg', 'arts and culture' : 'img/arts.svg', 
-							  'civil liberties' : 'img/civil.svg', 'community' : 'img/community.svg', 
-							  'disaster relief' : 'img/disaster.svg', 'drug abuse' : 'img/drug.svg', 
-							  'education' : 'img/education.svg', 'environment' : 'img/environment.svg', 
-							  'health' : 'img/health.svg', 'homelessness' : 'img/homelessness.svg', 
-							  'hunger' : 'img/hunger.svg', 'religion' : 'img/religion.svg', 
-							  'science' : 'img/science.svg', 'special needs' : 'img/needs.svg', 
-							  'women\'s rights' : 'img/women.svg'};
+	$scope.main.causeIcons = {'animal welfare' : 'icon-animal', 'arts and culture' : 'icon-arts', 
+							  'civil liberties' : 'icon-civil', 'community' : 'icon-community', 
+							  'disaster relief' : 'icon-disaster', 'drug abuse' : 'icon-drug', 
+							  'education' : 'icon-education', 'environment' : 'icon-environment', 
+							  'health' : 'icon-health', 'homelessness' : 'icon-homelessness', 
+							  'hunger' : 'icon-hunger', 'religion' : 'icon-religion', 
+							  'science' : 'icon-science', 'special needs' : 'icon-needs', 
+							  'women\'s rights' : 'icon-women'};
 }]);
