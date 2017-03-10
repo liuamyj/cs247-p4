@@ -3,6 +3,10 @@
 	flex-direction: horizontal;
 }
 
+.top-bar {
+	display: flex;
+}
+
 .sidebar {
 	margin: auto;
 	width: 150px;
