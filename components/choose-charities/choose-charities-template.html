@@ -42,7 +42,9 @@
 					</div>
 				</div>
 				<div ng-repeat="charity in charityList" class="charity">
-					<div class="charity-img"></div>
+					<div class="charity-img" ondrop="drop(event)" ondragover="allowDrop(event)">
+						<img id={{charity.name}}  src="http://www.psi.org/wp-content/uploads/2014/10/UNICEF.jpeg" draggable="true" ondragstart="drag(event)" width="120" height="120">
+					</div>
 					<div class="charity-info">
 						<div class="charity-name">{{charity.name}}</div>
 						<div class="charity-description">{{charity.description}}</div>
@@ -57,10 +59,10 @@
 			<div class="comparison-tool">
 				<div class="compare-tool-container">
 					<div class="compare-spaces">
-						<div class="compare-slot"></div>
-						<div class="compare-slot"></div>
-						<div class="compare-slot"></div>
-						<div class="compare-slot"></div>
+						<div class="compare-slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+						<div class="compare-slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+						<div class="compare-slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+						<div class="compare-slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 					</div>
 					<a ng-href="#!/compare" class="button-link">
 						<div class="button">COMPARE</div>
