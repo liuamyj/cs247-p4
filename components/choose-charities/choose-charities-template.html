@@ -42,8 +42,10 @@
 					</div>
 				</div>
 				<div ng-repeat="charity in charityList" class="charity">
-					<div class="charity-img" ondrop="drop(event)" ondragover="allowDrop(event)">
-						<img id={{charity.name}}  src="http://www.psi.org/wp-content/uploads/2014/10/UNICEF.jpeg" draggable="true" ondragstart="drag(event)" width="120" height="120">
+					<div class="charity-img">
+						<img id={{charity.name}} class="charity-img" ng-src="{{charity.img}}" 
+						draggable="true" ondragstart="drag(event)" width="120" height="120">
+						<img id={{charity.name}} class="charity-img" ng-src="{{charity.img}}">
 					</div>
 					<div class="charity-info">
 						<div class="charity-name">{{charity.name}}</div>
