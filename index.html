@@ -37,6 +37,23 @@
         <link rel="stylesheet" type="text/css" href="components/results/results.css" />
 
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600|Open+Sans:400,700" rel="stylesheet">
+
+                <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+        </script>
+        
     </head>
     <body>
     	<div ng-include="'components/header/header-template.html'" ng-controller="HeaderController"></div>
