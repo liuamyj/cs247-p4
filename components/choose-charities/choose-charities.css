@@ -63,7 +63,7 @@
 }
 
 .message-container {
-	height: calc(100vh - 226px); /*226px is height of compare tool+header+info message*/
+	height: calc(100vh - 266px); /*266px is height of compare tool+header+info message*/
 	overflow-y: auto;
 	display: flex;
 }
@@ -83,7 +83,7 @@
 }
 
 .charities-container {
-	height: calc(100vh - 226px); /*226px is height of compare tool+header+info message*/
+	height: calc(100vh - 266px); /*266px is height of compare tool+header+info message*/
 	overflow-y: auto;
 	padding-left: 50px;
 	padding-top: 20px;
@@ -138,7 +138,7 @@
 .comparison-tool {
 	position: absolute;
     bottom: 0;
-    height: 120px;
+    height: 160px;
     width: calc(100% - 150px); /*150px is width of sidebar*/
     background-color: white;
     border-top: 1px solid #979797;

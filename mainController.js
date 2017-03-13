@@ -42,6 +42,7 @@ app.controller('MainController', ['$scope', '$resource', '$route', function($sco
 	$scope.main.currState = 1; 
 	$scope.main.numSelected = 0; 
 	$scope.main.selectedCauses = [];
+	$scope.main.selectedCharities = [];
 
 	$scope.main.causes = ['animal welfare', 'arts and culture', 'civil liberties', 'community', 'disaster relief',
 					'drug abuse', 'education', 'environment', 'health', 'homelessness', 

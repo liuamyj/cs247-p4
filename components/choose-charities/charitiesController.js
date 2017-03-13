@@ -3,7 +3,11 @@ app.controller('CharitiesController', ['$scope', '$routeParams', function($scope
 
 	$scope.intro = true;
     $scope.main.currState = 2; 
-    $scope.selectedCharities = [];
+
+    $scope.loadSelected = function() {
+        $scope.main.selectedCharities = selected;
+        console.log($scope.main.selectedCharities);
+    };
 
 	if ($routeParams.cause !== undefined) {
 		$scope.intro = false;
