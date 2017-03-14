@@ -1,5 +1,5 @@
 
-var app = angular.module('myApp',['ngResource', 'ngRoute']);
+var app = angular.module('myApp',['ngResource', 'ngRoute', 'rzModule']);
 
 app.config(function($routeProvider) {
     $routeProvider
@@ -26,6 +26,10 @@ app.config(function($routeProvider) {
 	    .when('/waiting', {
 	        templateUrl : 'components/waiting/waiting-template.html',
 	        controller: 'WaitingController'
+	    })
+	    .when('/allocate-intro', {
+	        templateUrl : 'components/allocate-intro/allocate-intro-template.html',
+	        controller: 'AllocateIntroController'
 	    })
 	    .when('/allocate', {
 	        templateUrl : 'components/allocate/allocate-template.html',

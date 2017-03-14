@@ -10,9 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "angular": "^1.5.7",
-    "angular-native-dragdrop": "^1.2.2",
     "angular-resource": "^1.5.7",
     "angular-route": "^1.5.7",
+    "angularjs-slider": "^6.1.0",
     "bootstrap": "4.0.0-alpha.5",
     "express": "^4.14.0"
   }

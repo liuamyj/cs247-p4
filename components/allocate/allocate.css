@@ -1,0 +1,47 @@
+.num-causes {
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	height: 80px;
+	padding: 10px;
+}
+
+.num-causes-text {
+	color: #BABABA;
+	font-size: 14px;
+}
+
+.num-causes-counter {
+	display: flex;
+	font-weight: normal;
+	font-size: 28px;
+	letter-spacing: 10px;
+	justify-content: center;
+}
+
+.curr-num-selected {
+	color: #5B79A8;
+}
+
+.total-avail-selected {
+	color: #BABABA;
+}
+
+.rzslider .rz-selection {
+	background: #52C2A1;
+}
+
+.rzslider .rz-pointer {
+	background-color: #52C2A1;
+}
+
+.rzslider .rz-pointer.rz-active:after {
+	background-color: #52C2A1;
+}
+
+.rzslider .rz-pointer:after {
+	background-color: #52C2A1;
+}
+
+.rzslider .rz-pointer:hover:after {
+	background-color: #52C2A1;
+}

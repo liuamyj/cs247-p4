@@ -7,31 +7,30 @@
 	overflow-y: auto;
 }
 
-.num-causes {
+.budget {
 	font-family: 'Montserrat', sans-serif;
 	text-align: center;
 	height: 80px;
 	padding: 10px;
 }
 
-.num-causes-text {
+.budget-text {
 	color: #BABABA;
 	font-size: 14px;
 }
 
-.num-causes-counter {
+.budget-tracker {
 	display: flex;
 	font-weight: normal;
 	font-size: 28px;
-	letter-spacing: 10px;
 	justify-content: center;
 }
 
-.curr-num-selected {
+.amt-allocated {
 	color: #5B79A8;
 }
 
-.total-avail-selected {
+.total-budget {
 	color: #BABABA;
 }
 
