@@ -1,6 +1,7 @@
 
 app.controller('AllocateController', ['$scope', function($scope) {
 
+	// $scope.Math = window.Math;
 	$scope.main.currState = 4;
 	$scope.remaining = 400;
 
@@ -12,26 +13,32 @@ app.controller('AllocateController', ['$scope', function($scope) {
 		  audience: '500-1000 people',
           classification: 'General Arts Education',
 		  years: '40-50 years', 
-          img: 'img/pic_washjunior.png' };
+          img: 'img/pic_washjunior.png',
+          impact_amt: 50,
+          impact_before: 'Funds art classes for',
+          impact_after: 'student(s).' };
 
     $scope.family = [{ user: 'JANE',
     	  user_img: 'img/icon_mom.png',
     	  name: 'Environmental Responsibility Fund',  
           img: 'img/pic_environment.png',
-          impact_before: 'Plants ',
-          impact_after: ' trees.' },
+          impact_amt: 100,
+          impact_before: 'Plants',
+          impact_after: 'trees.' },
           { user: 'AMY',
           user_img: 'img/icon_amy.png',
-    	  name: 'Science Forward',  
+    	  name: 'Science Forward', 
           img: 'img/pic_science.png',
-          impact_before: 'Plants ',
-          impact_after: ' trees.' },
+          impact_amt: 4,
+          impact_before: 'Contributes to',
+          impact_after: 'research grant(s).' },
           { user: 'JIMMY',
           user_img: 'img/icon_dad.png',
     	  name: 'International Relief Organization',  
           img: 'img/pic_h4a.png',
-          impact_before: 'Plants ',
-          impact_after: ' trees.' },
+          impact_amt: 40,
+          impact_before: 'Provides meals for ',
+          impact_after: 'refugee(s).' },
     ];
 
 	$scope.slider1 = {

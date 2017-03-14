@@ -20,7 +20,7 @@
 			<img class="slider-charity-img" ng-src="{{main.selectedCharity.img}}" height="100">
 			<div class="slider-charity-details">
 				<div class="slider-charity-name">{{main.selectedCharity.name}}</div>
-				<div class="slider-charity-impact">Impact:</div>
+				<div class="slider-charity-impact"><span class="impact-bold">Impact:</span> {{main.selectedCharity.impact_before}} <span class="impact-val">{{(main.selectedCharity.impact_amt*slider1.value)/400| number:0}}</span> {{main.selectedCharity.impact_after}}</div>
 				<div class="slider-bar">
 		    		<rzslider rz-slider-model="slider1.value"
 		          rz-slider-options="slider1.options"></rzslider>
@@ -40,7 +40,7 @@
 			<img class="slider-charity-img" ng-src="{{family[0].img}}" height="100">
 			<div class="slider-charity-details">
 				<div class="slider-charity-name">{{family[0].name}}</div>
-				<div class="slider-charity-impact">Impact:</div>
+				<div class="slider-charity-impact"><span class="impact-bold">Impact:</span> {{family[0].impact_before}} <span class="impact-val">{{(family[0].impact_amt*slider2.value)/400| number:0}}</span> {{family[0].impact_after}}</div>
 				<div class="slider-bar">
 		    		<rzslider rz-slider-model="slider2.value"
 		          	rz-slider-options="slider2.options"></rzslider>
@@ -60,7 +60,7 @@
 			<img class="slider-charity-img" ng-src="{{family[1].img}}" height="100">
 			<div class="slider-charity-details">
 				<div class="slider-charity-name">{{family[1].name}}</div>
-				<div class="slider-charity-impact">Impact:</div>
+				<div class="slider-charity-impact"><span class="impact-bold">Impact:</span> {{family[1].impact_before}} <span class="impact-val">{{(family[1].impact_amt*slider3.value)/400| number:0}}</span> {{family[1].impact_after}}</div>
 				<div class="slider-bar">
 		    		<rzslider rz-slider-model="slider3.value"
 		          	rz-slider-options="slider3.options"></rzslider>
@@ -80,7 +80,7 @@
 			<img class="slider-charity-img" ng-src="{{family[2].img}}" height="100">
 			<div class="slider-charity-details">
 				<div class="slider-charity-name">{{family[2].name}}</div>
-				<div class="slider-charity-impact">Impact:</div>
+				<div class="slider-charity-impact"><span class="impact-bold">Impact:</span> {{family[2].impact_before}} <span class="impact-val">{{(family[2].impact_amt*slider4.value)/400| number:0}}</span> {{family[2].impact_after}}</div>
 				<div class="slider-bar">
 		    		<rzslider rz-slider-model="slider4.value"
 		          	rz-slider-options="slider4.options"></rzslider>
