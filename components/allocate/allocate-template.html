@@ -8,25 +8,97 @@
 		<div class="budget-text">REMAINING BUDGET</div>
 		<div class="budget-tracker">
 			<div class="amt-allocated">${{remaining}}</div>
-			<div class="total-budget"> / $400</div>
+			<div class="total-budget">&nbsp;/ $400</div>
 		</div>
 	</div>
 	<div class="sliders-container">
-		<div>
-    		<rzslider rz-slider-model="slider1.value"
-          rz-slider-options="slider1.options"></rzslider>
+		<div class="charity-slider">
+			<div class="slider-user">
+				<img class="slider-user-img" src="img/icon_katherine.png">
+				<div class="slider-user-name">KATHERINE</div>
+			</div>
+			<img class="slider-charity-img" ng-src="{{main.selectedCharity.img}}" height="100">
+			<div class="slider-charity-details">
+				<div class="slider-charity-name">{{main.selectedCharity.name}}</div>
+				<div class="slider-charity-impact">Impact:</div>
+				<div class="slider-bar">
+		    		<rzslider rz-slider-model="slider1.value"
+		          rz-slider-options="slider1.options"></rzslider>
+				</div>
+			</div>
+			<div class="slider-allocation">
+				<div class="allocation-header">ALLOCATION</div>
+				<div class="slider-allocation-amt">${{slider1.value}}</div>
+			</div>
 		</div>
-		<div>
-    		<rzslider rz-slider-model="slider2.value"
-          rz-slider-options="slider2.options"></rzslider>
+
+		<div class="charity-slider">
+			<div class="slider-user">
+				<img class="slider-user-img" ng-src="{{family[0].user_img}}">
+				<div class="slider-user-name">{{family[0].user}}</div>
+			</div>
+			<img class="slider-charity-img" ng-src="{{family[0].img}}" height="100">
+			<div class="slider-charity-details">
+				<div class="slider-charity-name">{{family[0].name}}</div>
+				<div class="slider-charity-impact">Impact:</div>
+				<div class="slider-bar">
+		    		<rzslider rz-slider-model="slider2.value"
+		          	rz-slider-options="slider2.options"></rzslider>
+				</div>
+			</div>
+			<div class="slider-allocation">
+				<div class="allocation-header">ALLOCATION</div>
+				<div class="slider-allocation-amt">${{slider2.value}}</div>
+			</div>
 		</div>
-		<div>
+
+		<div class="charity-slider">
+			<div class="slider-user">
+				<img class="slider-user-img" ng-src="{{family[1].user_img}}">
+				<div class="slider-user-name">{{family[1].user}}</div>
+			</div>
+			<img class="slider-charity-img" ng-src="{{family[1].img}}" height="100">
+			<div class="slider-charity-details">
+				<div class="slider-charity-name">{{family[1].name}}</div>
+				<div class="slider-charity-impact">Impact:</div>
+				<div class="slider-bar">
+		    		<rzslider rz-slider-model="slider3.value"
+		          	rz-slider-options="slider3.options"></rzslider>
+				</div>
+			</div>
+			<div class="slider-allocation">
+				<div class="allocation-header">ALLOCATION</div>
+				<div class="slider-allocation-amt">${{slider3.value}}</div>
+			</div>
+		</div>
+
+		<div class="charity-slider">
+			<div class="slider-user">
+				<img class="slider-user-img" ng-src="{{family[2].user_img}}">
+				<div class="slider-user-name">{{family[2].user}}</div>
+			</div>
+			<img class="slider-charity-img" ng-src="{{family[2].img}}" height="100">
+			<div class="slider-charity-details">
+				<div class="slider-charity-name">{{family[2].name}}</div>
+				<div class="slider-charity-impact">Impact:</div>
+				<div class="slider-bar">
+		    		<rzslider rz-slider-model="slider4.value"
+		          	rz-slider-options="slider4.options"></rzslider>
+				</div>
+			</div>
+			<div class="slider-allocation">
+				<div class="allocation-header">ALLOCATION</div>
+				<div class="slider-allocation-amt">${{slider4.value}}</div>
+			</div>
+		</div>
+		
+<!-- 		<div class="slider-bar">
     		<rzslider rz-slider-model="slider3.value"
           rz-slider-options="slider3.options"></rzslider>
 		</div>
-		<div>
+		<div class="slider-bar">
     		<rzslider rz-slider-model="slider4.value"
           rz-slider-options="slider4.options"></rzslider>
-		</div>
+		</div> -->
 	</div>
 </div>

@@ -7,33 +7,6 @@
 	overflow-y: auto;
 }
 
-.budget {
-	font-family: 'Montserrat', sans-serif;
-	text-align: center;
-	height: 80px;
-	padding: 10px;
-}
-
-.budget-text {
-	color: #BABABA;
-	font-size: 14px;
-}
-
-.budget-tracker {
-	display: flex;
-	font-weight: normal;
-	font-size: 28px;
-	justify-content: center;
-}
-
-.amt-allocated {
-	color: #5B79A8;
-}
-
-.total-budget {
-	color: #BABABA;
-}
-
 .causes-container {
 	display: flex;
 	justify-content: center;

@@ -1,3 +1,42 @@
+.main-container-allocate {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.budget {
+	margin: 10px;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	height: 80px;
+	padding: 10px;
+}
+
+.budget-text {
+	color: #BABABA;
+	font-size: 14px;
+}
+
+.budget-tracker {
+	display: flex;
+	font-weight: normal;
+	font-size: 28px;
+	justify-content: center;
+}
+
+.amt-allocated {
+	color: #5B79A8;
+}
+
+.total-budget {
+	color: #BABABA;
+}
+
+.sliders-container {
+	width: 870px;
+}
+
 .num-causes {
 	font-family: 'Montserrat', sans-serif;
 	text-align: center;
@@ -24,6 +63,41 @@
 
 .total-avail-selected {
 	color: #BABABA;
+}
+
+.slider-user {
+	width: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.charity-slider {
+	display: flex;
+	width: 870px;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.slider-bar {
+	width: 500px;
+}
+
+.slider-allocation {
+	font-family: 'Montserrat', sans-serif;
+	margin-left: 30px;
+}
+
+.allocation-header {
+	padding-top: 20px;
+	font-size: 14px;
+	color: #BABABA; 
+}
+
+.slider-allocation-amt {
+	font-size: 24px;
+	color: #5B79A8;
 }
 
 .rzslider .rz-selection {
