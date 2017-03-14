@@ -9,30 +9,56 @@
 	<div class="num-causes-text"></div>
 </div>
 <div class="main-compare-container">
-    <div class="compare-container">
-    	<div class = "left">
-            <div class="compare-categories">stated mission</div>  
-            <div class="compare-categories">stated mission</div>
-            <div class="compare-categories">stated mission</div>
-            <div class="compare-categories">stated mission</div>
-            <div class="compare-categories">stated mission</div>
-            <div class="compare-categories">stated mission</div>  
-        </div>
-    	<div ng-repeat="compare in compares" class="compare"> 
-        	<div class="compare-charity-icon"></div>
-        	<div class="compare-charity-name">{{compare.name}}</div>
-        	<div class="background-columns">
-        		<ul class="compare-details">
-        			<li class="compare-item">{{compare.mission}}</li>
-        			<li class="compare-item">{{compare.years}}</li>
-        			<li class="compare-item">{{compare.audience}}</li>
-        			<li class="compare-item">{{compare.funding}}</li>
-        			<li class="compare-item">{{compare.expenses}}</li>
-        			<li class="compare-item">{{compare.rating}}</li>
-        		</ul>
-        	</div>
-    	</div>
-    </div>
+    <table class="compare-container">
+        <tr class="compare-table-row">
+            <td class="compare-categories"></td>
+            <td ng-repeat="compare in main.selectedCharities" class="charity-icon-container compare-table-entry">
+                <img ng-src="{{compare.img}}" class="compare-charity-icon">
+            </td>
+        </tr>
+        <tr class="compare-table-row">
+            <td class="compare-categories"></td>
+            <td ng-repeat="compare in main.selectedCharities" class="compare-charity-name">
+                {{compare.name}}
+            </td>
+        </tr>
+        <tr class="compare-table-row">
+            <td class="compare-categories">stated mission</td>
+            <td ng-repeat="compare in main.selectedCharities" class="compare-charity-mission compare-table-entry">
+                {{compare.mission}}
+            </td>
+        </tr>
+        <tr class="compare-table-row">
+            <td class="compare-categories">years of operation</td>
+            <td ng-repeat="compare in main.selectedCharities" class="compare-table-entry">
+                {{compare.years}}
+            </td>
+        </tr>
+        <tr class="compare-table-row">
+            <td class="compare-categories">audience size</td>
+            <td ng-repeat="compare in main.selectedCharities" class="compare-table-entry">
+                {{compare.audience}}
+            </td>
+        </tr>
+        <tr class="compare-table-row">
+            <td class="compare-categories">total funding 2016</td>
+            <td ng-repeat="compare in main.selectedCharities" class="compare-table-entry">
+                {{compare.funding}}
+            </td>
+        </tr>
+        <tr class="compare-table-row">
+            <td class="compare-categories">total expenses 2016</td>
+            <td ng-repeat="compare in main.selectedCharities" class="compare-table-entry">
+                {{compare.expenses}}
+            </td>
+        </tr>
+        <tr class="compare-table-row">
+            <td class="compare-categories">classification</td>
+            <td ng-repeat="compare in main.selectedCharities" class="compare-table-entry">
+                {{compare.classification}}
+            </td>
+        </tr>
+    </table>
     <div class="button-row">
         <a ng-href="#!/allocate" class="button button-row-position">CHOOSE THIS CHARITY</a>
     </div>

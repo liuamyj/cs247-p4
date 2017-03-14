@@ -2,60 +2,97 @@
 	text-align: center;
 }
 
-.left {
-	padding-top: 240px;
-}
-
 .compare-categories {
 	padding-bottom: 20px;
 }
 
 .main-compare-container {
 	padding-bottom: 30px;
+	width: 1000px;
 }
 
 .compare-container {
 	width: 100%;
-	display: flex;
-	justify-content: center;
-	padding-bottom: 10px;
+	table-layout: fixed;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	margin-left: 30px;
 }
 
-.compare {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+.compare-table-entry {
+	width: 210px;
+	padding-left: 10px;
+	padding-right: 10px;
+	vertical-align: top;
+	font-size: 12px;
+	cursor: pointer;
+    position: relative;
+}
+
+.compare-table-entry:hover::after,
+.ff-fix:hover::after { 
+    background-color: #F1F3F5;
+    content: '\00a0';  
+    height: 10000px;    
+    left: 0;
+    position: absolute;  
+    top: -5000px;
+    width: 100%;
+    z-index: -1;        
+}
+
+.compare-categories {
+	width: 210px;
+	padding-right: 30px;
+	text-transform: uppercase;
+	text-align: right;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+}
+
+.charity-icon-container {
+	width: 210px;
 	text-align: center;
-	padding-top: 20px;
-	margin: 20px;
 }
 
 .compare-charity-name {
+	width: 210px;
+	padding-left: 10px;
+	padding-right: 10px;
 	text-transform: uppercase;
-	width: 180px;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	padding-bottom: 20px;
+	cursor: pointer;
+    position: relative;
+}
+
+.compare-charity-name:hover::after,
+.ff-fix:hover::after { 
+    background-color: #F1F3F5;
+    content: '\00a0';  
+    height: 10000px;    
+    left: 0;
+    position: absolute;  
+    top: -5000px;
+    width: 100%;
+    z-index: -1;        
+}
+
+.compare-charity-mission {
+	padding-bottom: 20px;
 }
 
 .compare-charity-icon {
 	height: 120px;
 	width: 120px;
-	background-color: grey;
+	margin: 25px;
 }
 
-.compare-details {
-	list-style-type: circle;
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    overflow: hidden;
+    z-index: 1;
 }
 
-.compare-item {
-	font-size: 12px;
-	font-style: italic;
-	margin: 10px; 
-}
-
-.background-columns {
-	margin: auto;
-	width: 250px;
-	height: 45vh;
-	text-align: left;
-	background-color: lightgrey;
-	padding-top: 20px;
-}
