@@ -86,6 +86,12 @@
 	justify-content: center;
 }
 
+.slider-user-name {
+	font-family: 'Montserrat', sans-serif;
+	color: #AAAAAA; 
+	font-size: 14px;
+}
+
 .charity-slider {
 	display: flex;
 	width: 870px;

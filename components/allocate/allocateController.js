@@ -1,7 +1,6 @@
 
 app.controller('AllocateController', ['$scope', function($scope) {
 
-	// $scope.Math = window.Math;
 	$scope.main.currState = 4;
 	$scope.remaining = 400;
 

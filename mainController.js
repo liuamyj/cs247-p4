@@ -75,7 +75,10 @@ app.controller('MainController', ['$scope', '$resource', '$route', function($sco
 		  audience: '500-1000 people',
           classification: 'General Arts Education',
 		  years: '40-50 years', 
-          img: 'img/pic_washjunior.png' },
+          img: 'img/pic_washjunior.png',
+          impact_amt: 50,
+          impact_before: 'Funds art classes for',
+          impact_after: 'student(s).' },
 		{ name: 'Latino Youth Arts Education Group', 
 		  description: 'LYAEG\'s mission is to educate and prepare America\'s future workforce through internsive educational programming and leadership development training. We reach out into some of the nation\'s most disadvantaged neighborhoods and help promising students navigate to academic success.', 
           mission: 'To educate America\'s future workforce through educational programming and leadership development training.',
@@ -84,13 +87,46 @@ app.controller('MainController', ['$scope', '$resource', '$route', function($sco
 		  audience: '500-1000 people',
           classification: 'Youth Leadership',
 		  years: '10-20 years',
-          img: 'img/pic_latinoarts.png' },
+          img: 'img/pic_latinoarts.png',
+          impact_amt: 50,
+          impact_before: 'Fund educational programming for',
+          impact_after: 'student(s).' },
 		{ name: 'Teach for America', 
 		  description: 'Teach for America is playing a role in eliminating this injustice by recruiting, developing, and supporting leaders committed to creating change. These individuals begin their path with a two-year commitment to teach in low-income urban and rural public schools.', 
-          mission: 'To build mortgage free, specially adapted homes nationwide for severely injured veterans post 9/11.', 
+          mission: 'To enlist, develop, and mobilize as many as possible of our nation\'s most promising future leaders.', 
 		  funding: '$10-50 thousand',
 		  audience: '500-1000 people',
 		  years: '10-20 years',
-          img: 'img/pic_t4a.png' } 
+          img: 'img/pic_t4a.png',
+          impact_amt: 4,
+          impact_before: 'Contributes to',
+          impact_after: 'student scholarships.' } 
 	];
 }]);
+
+app.directive('aDisabled', function() {
+    return {
+        compile: function(tElement, tAttrs, transclude) {
+            //Disable ngClick
+            tAttrs["ngClick"] = "!("+tAttrs["aDisabled"]+") && ("+tAttrs["ngClick"]+")";
+
+            //return a link function
+            return function (scope, iElement, iAttrs) {
+
+                //Toggle "disabled" to class when aDisabled becomes true
+                scope.$watch(iAttrs["aDisabled"], function(newValue) {
+                    if (newValue !== undefined) {
+                        iElement.toggleClass("disabled", newValue);
+                    }
+                });
+
+                //Disable href on click
+                iElement.on("click", function(e) {
+                    if (scope.$eval(iAttrs["aDisabled"])) {
+                        e.preventDefault();
+                    }
+                });
+            };
+        }
+    };
+});

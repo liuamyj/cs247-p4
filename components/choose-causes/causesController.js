@@ -3,6 +3,7 @@ app.controller('CausesController', ['$scope', '$resource', function($scope, $res
 
 	const MAX_CAUSES = 5;
 	$scope.main.currState = 1; 
+	$scope.chooseValid = false; 
 
 	$scope.selectCause = function(cause) {
 		// if cause is selected, deselect it 
