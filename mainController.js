@@ -19,6 +19,10 @@ app.config(function($routeProvider) {
 	        templateUrl : 'components/compare-charities/compare-charities-template.html',
 	        controller: 'CompareController'
 	    })
+	    .when('/calendar', {
+	        templateUrl : 'components/calendar/calendar-template.html',
+	        controller: 'CalendarController'
+	    })
 	    .when('/waiting', {
 	        templateUrl : 'components/waiting/waiting-template.html',
 	        controller: 'WaitingController'
@@ -43,7 +47,7 @@ app.controller('MainController', ['$scope', '$resource', '$route', function($sco
 	$scope.main.numSelected = 0; 
 	$scope.main.selectedCauses = [];
 	$scope.main.selectedCharities = [];
-	$scope.main.finalCharity = '';
+	$scope.main.selectedCharity = '';
 
 	$scope.main.causes = ['animal welfare', 'arts and culture', 'civil liberties', 'community', 'disaster relief',
 					'drug abuse', 'education', 'environment', 'health', 'homelessness', 

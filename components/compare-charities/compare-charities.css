@@ -41,6 +41,10 @@
     z-index: -1;        
 }
 
+.selected-charity {
+	background-color: #F1F3F5;
+}
+
 .compare-categories {
 	width: 210px;
 	padding-right: 30px;

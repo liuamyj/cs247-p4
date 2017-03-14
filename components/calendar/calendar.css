@@ -1,4 +1,4 @@
-.waiting-container {
+.calendar-container {
 	width: 100%;
 	height: calc(100vh - 120px); /*120px is height of header+info message*/
 	display: flex;
@@ -8,7 +8,7 @@
 	overflow-y: auto;
 }
 
-.waiting-great {
+.calendar-great {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 30px;
 	font-weight: bold;
@@ -16,7 +16,7 @@
 	padding-bottom: 10px;
 }
 
-.waiting-message {
+.calendar-message {
 	width: 450px;
 	text-align: center;
 	font-size: 16px;
@@ -24,13 +24,6 @@
 	padding-bottom: 40px;
 }
 
-.waiting-notification {
-	text-align: center;
-	font-size: 18px;
-	font-weight: bold;
-	padding-bottom: 50px;
-}
-
-.waiting-img {
+.calendar-img {
 	margin-bottom: 20px;
 }

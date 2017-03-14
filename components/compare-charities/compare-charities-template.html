@@ -12,54 +12,62 @@
     <table class="compare-container">
         <tr class="compare-table-row">
             <td class="compare-categories"></td>
-            <td ng-repeat="compare in main.selectedCharities" class="charity-icon-container compare-table-entry">
-                <img ng-src="{{compare.img}}" class="compare-charity-icon">
+            <td ng-repeat="compare in main.selectedCharities" ng-class="{ 'selected-charity': main.selectedCharity === compare }"
+            class="charity-icon-container compare-table-entry">
+                <img ng-src="{{compare.img}}" class="compare-charity-icon" 
+                ng-click="selectCharity(compare)">
             </td>
         </tr>
         <tr class="compare-table-row">
             <td class="compare-categories"></td>
-            <td ng-repeat="compare in main.selectedCharities" class="compare-charity-name">
+            <td ng-repeat="compare in main.selectedCharities" class="compare-charity-name"
+            ng-click="selectCharity(compare)" ng-class="{ 'selected-charity': main.selectedCharity === compare }">
                 {{compare.name}}
             </td>
         </tr>
         <tr class="compare-table-row">
             <td class="compare-categories">stated mission</td>
-            <td ng-repeat="compare in main.selectedCharities" class="compare-charity-mission compare-table-entry">
+            <td ng-repeat="compare in main.selectedCharities" class="compare-charity-mission compare-table-entry" ng-click="selectCharity(compare)" ng-class="{ 'selected-charity': main.selectedCharity === compare }">
                 {{compare.mission}}
             </td>
         </tr>
         <tr class="compare-table-row">
             <td class="compare-categories">years of operation</td>
-            <td ng-repeat="compare in main.selectedCharities" class="compare-table-entry">
+            <td ng-repeat="compare in main.selectedCharities" class="compare-table-entry"
+            ng-click="selectCharity(compare)" ng-class="{ 'selected-charity': main.selectedCharity === compare }">
                 {{compare.years}}
             </td>
         </tr>
         <tr class="compare-table-row">
             <td class="compare-categories">audience size</td>
-            <td ng-repeat="compare in main.selectedCharities" class="compare-table-entry">
+            <td ng-repeat="compare in main.selectedCharities" class="compare-table-entry"
+            ng-click="selectCharity(compare)" ng-class="{ 'selected-charity': main.selectedCharity === compare }">
                 {{compare.audience}}
             </td>
         </tr>
         <tr class="compare-table-row">
             <td class="compare-categories">total funding 2016</td>
-            <td ng-repeat="compare in main.selectedCharities" class="compare-table-entry">
+            <td ng-repeat="compare in main.selectedCharities" class="compare-table-entry"
+            ng-click="selectCharity(compare)" ng-class="{ 'selected-charity': main.selectedCharity === compare }">
                 {{compare.funding}}
             </td>
         </tr>
         <tr class="compare-table-row">
             <td class="compare-categories">total expenses 2016</td>
-            <td ng-repeat="compare in main.selectedCharities" class="compare-table-entry">
+            <td ng-repeat="compare in main.selectedCharities" class="compare-table-entry"
+            ng-click="selectCharity(compare)" ng-class="{ 'selected-charity': main.selectedCharity === compare }">
                 {{compare.expenses}}
             </td>
         </tr>
         <tr class="compare-table-row">
             <td class="compare-categories">classification</td>
-            <td ng-repeat="compare in main.selectedCharities" class="compare-table-entry">
+            <td ng-repeat="compare in main.selectedCharities" class="compare-table-entry"
+            ng-click="selectCharity(compare)" ng-class="{ 'selected-charity': main.selectedCharity === compare }">
                 {{compare.classification}}
             </td>
         </tr>
     </table>
     <div class="button-row">
-        <a ng-href="#!/allocate" class="button button-row-position">CHOOSE THIS CHARITY</a>
+        <a ng-href="#!/calendar" class="button button-row-position">CHOOSE THIS CHARITY</a>
     </div>
 </div>

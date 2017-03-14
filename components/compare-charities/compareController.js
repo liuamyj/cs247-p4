@@ -37,5 +37,12 @@ app.controller('CompareController', ['$scope', '$resource', function($scope, $re
 		  years: '10-20 years',
           img: 'img/pic_t4a.png' }  
 	];
+
+	$scope.selectCharity = function(charity) {
+
+		console.log(JSON.stringify($scope.main.selectedCharity));
+		$scope.main.selectedCharity = charity;
+		console.log(JSON.stringify($scope.main.selectedCharity));
+	};
 	
 }]);

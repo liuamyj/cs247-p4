@@ -47,6 +47,25 @@ html, body {
   text-decoration: none;
 }
 
+.center-button {
+  display:block;
+  width: 225px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  background-color: #52C2A1;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.center-button:hover {
+  background-color: #34F5BB;
+  color: white;
+  text-decoration: none;
+}
+
 .button-row-position {
 	margin-left: 700px;
 }
