@@ -147,15 +147,21 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 780px;
+	width: 950px;
 	height: 100%;
+}
+
+.compare-tool-instructions {
+	/*font-family: 'Montserrat', sans-serif;*/
+	width: 120px;
+	padding-left: 20px;
+	text-align: center;
 }
 
 .compare-spaces {
 	height: 100%;
 	display: flex;
 	align-items: center;
-	margin-left: 70px;
 }
 
 .compare-slot {
