@@ -4,19 +4,6 @@ app.controller('AllocateController', ['$scope', function($scope) {
 	$scope.main.currState = 4;
 	$scope.remaining = 400;
 
-	$scope.main.selectedCharity = { name: 'Washington Junior School of the Arts', 
-		  description: 'Located in Washington DC, the Washington Junior School of the Arts is the only DC public high school that provides pre-professional arts training and a full college preparatory curriculum to over 530 youth (grades 9-12) from every ward of Washington DC, with approximately 40% from Wards 6, 7, and 8.',
-          mission: 'To provide pre-professional arts training and a full college preparatory curriculum to over 500 youth.', 
-		  funding: '$1-5 million',
-          expenses: '$1-5 million',
-		  audience: '500-1000 people',
-          classification: 'General Arts Education',
-		  years: '40-50 years', 
-          img: 'img/pic_washjunior.png',
-          impact_amt: 50,
-          impact_before: 'Funds art classes for',
-          impact_after: 'student(s).' };
-
     $scope.family = [{ user: 'JANE',
     	  user_img: 'img/icon_mom.png',
     	  name: 'Environmental Responsibility Fund',  
